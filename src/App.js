@@ -7,7 +7,6 @@ import Homepage from "./components/Homepage";
 import Feature from "./components/feature";
 import About from "./components/About";
 
-
 function App() {
   return (
     <div className="grid gap-8 space-y-4">
