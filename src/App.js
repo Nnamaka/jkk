@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+//  background-color: #282c34;
+// import Login from "./components/Login";
+// import Login2 from "./components/Login2";
+// import Login3 from "./components/Login3";
+// import Mytry from "./components/mytry";
+import Homepage from "./components/Homepage";
+import Feature from "./components/feature";
+import About from "./components/About";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="grid gap-8 space-y-4">
+      {/* <Login2 /> */}
+      {/* <Login /> */}
+      {/* < Login3 /> */}
+      {/* <Mytry/> */}
+      <Homepage/>
+      <Feature/>
+      <div className=""></div>
+      <About />
     </div>
   );
 }
