@@ -3,11 +3,12 @@
 const About = () => {
     return ( 
         <div id="about" className="w-full h-screen mt-10 items-center relative justify-center">
-                
+            
+            <div className="h-40 mt-10 md:h-0"></div>
             {/* <div className="flex-col md-[768px]:flex-row m-auto"> */}
             <div className="md:flex justify-between mt-10 px-4" >
                {/* About Juke */}
-               <div className="md:w-1/2 mt-10 mx-4">   
+               <div className="md:w-1/2 mt-10 md:mt-0 mx-4">   
                     <h1 className="text-2xl font-bold font-sans my-4">ABOUT JUKE</h1>
                     <p className="max-h-[510] max-w-auto font-mono text-1xl text-left">
                     Juke is an innovative AI-powered music recommendation system that revolutionizes the way you discover and enjoy music. 
@@ -32,7 +33,7 @@ const About = () => {
                 </div>
 
             {/* contact details */}
-                <div className="flex flex-col md:w-1/2 mt-10 mx-4 md:pl-28">
+                <div className="flex flex-col md:w-1/2 mt-10 md:mt-0 mx-4 md:pl-28">
                     <h1 className="text-2xl text-lightGreen font-bold font-sans my-4 ">DEVELOPERS</h1>
                     <a href="https://github.com/joseph0017" className="text-left font-mono font-medium hover:text-lightGreen">Joseph</a>
                     <a href="https://github.com/AnnahNokutheza" className="text-left font-mono font-medium hover:text-lightGreen">Annah</a>

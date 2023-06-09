@@ -9,14 +9,14 @@ import About from "./components/About";
 
 function App() {
   return (
-    <div className="grid gap-8 space-y-4">
+    <div className="grid gap-10 md:gap-0">
       {/* <Login2 /> */}
       {/* <Login /> */}
       {/* < Login3 /> */}
       {/* <Mytry/> */}
       <Homepage/>
       <Feature/>
-      <div className=""></div>
+      
       <About />
     </div>
   );
