@@ -1,5 +1,5 @@
 import iconn from "../assets/ikon.png"
-import { Link } from 'react-scroll';
+import { Link } from 'react-router-dom';
 
 
 
@@ -14,7 +14,7 @@ const Homepage = () => {
                 </div>
                 <div className="flex space-x-8 justify-between">
                     <button className="font-bold font-sans text-1xl hover:text-lightGreen">HOME</button>
-                    <button><Link to="about" className="flex items-center font-bold font-sans text-1xl hover:text-lightGreen" smooth={true} duration={500}>ABOUT</Link></button>
+                    <button><Link to="/about" className="flex items-center font-bold font-sans text-1xl hover:text-lightGreen" >ABOUT</Link></button>
                     <button className="font-bold font-sans text-1xl hover:text-lightGreen">LISTEN NOW</button>
                 </div>
             </nav>

@@ -1,13 +1,22 @@
+import LeftArrow from "../assets/left.png"
+import { Link } from 'react-router-dom';
 
 
 const About = () => {
     return ( 
         <div id="about" className="w-full h-screen mt-10 items-center relative justify-center">
             
-            <div className="h-40 mt-10 md:h-0"></div>
-            {/* <div className="flex-col md-[768px]:flex-row m-auto"> */}
+            {/* <div className="h-40 mt-10 "></div> */}
+            
+                <div className="flex items-start ml-6">
+                    <Link to="/jkk" >
+                        <img className="object-cover my-0 h-14 w-16" src={LeftArrow} alt="" />
+                    </Link>
+                </div>
+            
             <div className="md:flex justify-between mt-10 px-4" >
                {/* About Juke */}
+               
                <div className="md:w-1/2 mt-10 md:mt-0 mx-4">   
                     <h1 className="text-2xl font-bold font-sans my-4">ABOUT JUKE</h1>
                     <p className="max-h-[510] max-w-auto font-mono text-1xl text-left">

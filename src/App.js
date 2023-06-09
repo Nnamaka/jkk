@@ -3,22 +3,26 @@
 // import Login2 from "./components/Login2";
 // import Login3 from "./components/Login3";
 // import Mytry from "./components/mytry";
-import Homepage from "./components/Homepage";
-import Feature from "./components/feature";
-import About from "./components/About";
+import Home from "./pages/Home"
+import About from "./pages/About";
+
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="grid gap-10 md:gap-0">
+    <Router>
+      <div className="grid gap-10 md:gap-0">
       {/* <Login2 /> */}
       {/* <Login /> */}
       {/* < Login3 /> */}
       {/* <Mytry/> */}
-      <Homepage/>
-      <Feature/>
-      
-      <About />
-    </div>
+        <Routes>
+            <Route path='/jkk' Component={Home} />
+            <Route path="/about" element={<About/>} /> 
+        </Routes>
+      </div>
+    </Router>
+    
   );
 }
 
